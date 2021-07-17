@@ -1,0 +1,21 @@
+{{ if (ne .Params.comment false) }}
+
+    {{ if .Site.Params.gittalk.enable }}
+        <div id="gitalk-container"></div>
+        <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script>
+        var gitalk = new Gitalk({
+            id: decodeURI(window.location.pathname),
+            clientID: '{{ .Site.Params.gittalk.clientID }}',
+            clientSecret: '{{ .Site.Params.gittalk.clientSecret }}',
+            repo: '{{ .Site.Params.gittalk.repo }}',
+            owner: '{{ .Site.Params.gittalk.owner }}',
+            admin: ['{{ .Site.Params.gittalk.owner }}'],
+            labels: ['gitment'],
+            perPage: 25,
+        })
+        gitalk.render('gitalk-container')
+        </script>
+    {{ end }}
+{{ end }}
