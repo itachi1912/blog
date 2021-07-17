@@ -52,6 +52,11 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   name = "记录实验过程"
   url = "https://blog.cetcweb.cn/"
 
+[[params.links]]
+  title = "奇它博客"
+  name = "奇它博客"
+  url = "https://qitablog.com/"
+
 
 [params.utteranc]
   enable = false
