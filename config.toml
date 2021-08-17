@@ -61,7 +61,15 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   title = "Ezio"
   name = "Ezio"
   url = "http://laihongquan.com/"
-
+  
+[[params.links]]
+  title = "早起的年轻人"
+  name = "早起的年轻人"
+  url = "https://luckly.work/"
+[[params.links]]
+  title = "格姗知识圈"
+  name = "格姗知识圈"
+  url = "https://geshanzsq.com"
 
 [params.utteranc]
   enable = false
