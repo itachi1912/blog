@@ -78,7 +78,7 @@ disqusShortname = ""  ## 是否开启disqus评论，不要和utteranc同时开�
   theme = "github-light"
   
 [params.gittalk]
-  enable = true
+  enable = false
   owner="itachi1912"
   repo="itachi1912.github.io"
   clientID="30ffb17e5ccaa5f1830e"
